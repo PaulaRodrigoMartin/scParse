@@ -471,7 +471,7 @@ for sp,name in sp_sample_dict.items():
 # input files for reference
 genome_file = f'{in_path}/genome.fa'
 gene_annotation_file = f'{in_path}/gene_annot_orth_human_mc_ampl.gtf' # For t2t reference
-path_to_ref = f'{out_path}annotation_starsolo/'
+path_to_ref = f'{out_path}/annotation_starsolo/'
 
 # create the directory to store the reference if it doesn't exist already
 if not os.path.exists(path_to_ref):
