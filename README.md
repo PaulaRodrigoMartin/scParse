@@ -81,7 +81,7 @@ python3.10 scripts/unite_tables.py
 ```
 
 ### 6. Processing Output Files
-- **Collapse random hexamers and polyT:** Run notebooks in `/jupyter/collapse/collapse_primers_{sp}.ipynb`.
+- **Collapse random hexamers and polyT:** Run notebooks in `/jupyter/collapse/collapse_primers_{sp}.ipynb`, where sp is each species (fex, CHMP).
 - **Quality Control (QC):** Run `/jupyter/QC/preproc_QC_{sp}_starsolo.ipynb`.
 - **Clustering:**
   - For all species: `/jupyter/cluster/cluster_intergration.ipynb`
