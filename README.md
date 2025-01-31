@@ -21,6 +21,8 @@ For more details, refer to [Slurm Jupyter documentation](https://slurm-jupyter.r
 
 ## Workflow
 
+Steps 2,3 and 4 are the steps that are included in workflow.py, so the information given here is merely explanatory. 
+
 ### 1. Preprocess FastQ Files
 #### Extract and Concatenate Files
 1. Untar files from:
