@@ -6,6 +6,7 @@ from scipy.io import mmread, mmwrite
 from scipy.sparse import hstack, vstack, csr_matrix
 import shutil
 
+# modify samples as needed (should be same species and samples as in workflow)
 sp_sample_dict = {
 	"CHMP":["Chimpanzee_Stephan","Chimpanzee_marlock"],
 	"GUB":["Guinea_Baboon_5","Guinea_Baboon_6"],
@@ -18,11 +19,13 @@ sp_sample_dict = {
 	"LRG":["Lar_Gibbon_Tarzan"]
 }
 
+# modify sublibraries as needed (shold be the same sublibraries as in workflow)
 sublibraries = ["PARSE1_UDI_WT_1", "PARSE2_UDI_WT_2", "PARSE3_UDI_WT_3", "PARSE4_UDI_WT_4", "PARSE6_UDI_WT_4"]
 
 
 BASE_DIR = Path(__file__).parent
 
+# modify output path as needed (shold be the same out_path as in workflow)
 out_path = BASE_DIR / "starsolo_v1_t2t"
 out_path = str(out_path.resolve())
 

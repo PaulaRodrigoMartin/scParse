@@ -3,6 +3,9 @@ import pandas as pd
 
 root_path = "/home/paulilokiestudia/testis_singlecell/Workspaces/paula/starsolo_v1/"
 
+sublibraries = ["PARSE1_UDI_WT_1", "PARSE2_UDI_WT_2", "PARSE3_UDI_WT_3", "PARSE4_UDI_WT_4", "PARSE6_UDI_WT_4"]
+
+
 # Samples used in the analysis, modify as necessary:
 sp_sample_dict = {
 	"CHMP":["Chimpanzee_Stephan","Chimpanzee_marlock"],
@@ -28,7 +31,6 @@ sum_rows = [
     "Total GeneFull Detected"
 ]
 
-sublibraries = ["PARSE1_UDI_WT_1", "PARSE2_UDI_WT_2", "PARSE3_UDI_WT_3", "PARSE4_UDI_WT_4", "PARSE6_UDI_WT_4"]
 
 all_samples_data = []
 
@@ -89,8 +91,6 @@ for species, samples in sp_sample_dict.items():
             print(f"No data to save for sample: {sample_name}")
 
 
-# import os
-# import pandas as pd
 
 csv_files = []
 
