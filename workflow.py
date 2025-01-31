@@ -60,10 +60,10 @@ BASE_DIR = Path(__file__).parent
 
 in_path = BASE_DIR / "../../backup/PrimaryData/human/ref/t2t"
 out_path = BASE_DIR / "starsolo_v1_t2t"
-out_path_parse = BASE_DIR / "parse_good_v1_t2t"
+out_path_parse = BASE_DIR / "parse_good_v1_t2t/"
 fastq_files = BASE_DIR / "../emma/PARSE/rawdata/split-fq_v1"
-path_to_fastq_files = BASE_DIR / "primary_data"
-empty_file = BASE_DIR / "gwf_out_empty"
+path_to_fastq_files = BASE_DIR / "primary_data/"
+empty_file = BASE_DIR / "gwf_out_empty/"
 
 # Modify barcode_whitelist accordingly to the chemistry version of parse
 barcode_whitelist = [
@@ -277,18 +277,6 @@ def mapping_starsolo(path_to_ref, read_2, read_1, CB_whitelist, out_prefix):
 
 # MISC
 ###################
-# for postprocessing the files, gets the paths of the matrices, features and barcodes and stores them in a variable
-def generate_paths(sp_sample_dict, sublibraries, out_path, file_structure, key_suffix):
-    paths = {}
-    for sp, name in sp_sample_dict.items():
-        for sample in sp_sample_dict[sp]:
-            key = f"{sp}/{sample}/{key_suffix}"
-            paths[key] = []
-            out_path_sample = f"{out_path}{sp}/{sample}/"
-            for sublib in sublibraries:
-                path = f"{out_path_sample}{sublib}/{file_structure}"
-                paths[key].append(path)
-    return paths
 
 # function that concatenates fastqfiles from the same sublibrary
 def concat_species(in_dir, fastqspecies, out_file):
@@ -491,7 +479,7 @@ if not os.path.exists(path_to_ref):
 
 empty_files = None
 for sublib in sublibraries: 
-    empty_files = f'{empty_file}empty_gwf{sublib}'
+    empty_files = f'{empty_file}/empty_gwf{sublib}'
 
 # # construct STARsolo genome reference
 gwf.target_from_template(f'run_starsolo_ref_annotation',
