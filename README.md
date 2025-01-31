@@ -1,7 +1,5 @@
 # PARSE sequencing data analysis --> PARSE pipeline and STARsolo
 
-# PARSE Project
-
 ## Overview
 This project involves preprocessing, analyzing and processing single-cell sequencing data. This README provides guidelines on running the necessary pipelines and scripts for the project.
 
