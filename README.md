@@ -8,9 +8,16 @@ Ensure you have the following dependencies installed:
 - Python 3.10
 - Jupyter Notebook
 - Slurm (for cluster computing)
-- Required Python libraries (environment.yaml)
+- Required Python libraries (environment.yml)
 
 ## Setup
+###
+
+Create the environment from the .yml file, run:
+```sh
+conda env create -f environment.yml
+```
+### Jupyter notebooks in the cluster
 To run a Jupyter notebook in the cluster, execute the following command in your local terminal:
 ```sh
 slurm-jupyter -e jupyter -A account_of_your_project -u your_username
